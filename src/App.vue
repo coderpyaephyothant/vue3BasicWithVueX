@@ -1,9 +1,14 @@
 <template>
   <nav>
+    <router-link to="/newFeed">NewFeed</router-link> |
+    <router-link to="/logInPage">LogInPage</router-link> |
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <!-- <router-link to="/myShop">May San Resturant</router-link> -->
+    <router-link :to="{ name: 'myShop' }">May San Resturant</router-link> |
+    <router-link :to="{ name: 'noteList' }">Your Notes</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
